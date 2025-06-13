@@ -44,7 +44,7 @@ jobs:
           cp -r /home/linuxbrew/.linuxbrew/Cellar/msgpack-cxx/*/* src/pgm_build_dependencies/msgpack_cxx/
 
       - name: Commit and push changes
-        uses: stefanzweifel/git-auto-commit-action@v5
+        uses: stefanzweifel/git-auto-commit-action@v6
         with:
           commit_message: Update the headers
           commit_options: '--signoff'
