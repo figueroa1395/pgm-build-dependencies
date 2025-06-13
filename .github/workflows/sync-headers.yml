@@ -42,7 +42,7 @@ jobs:
           cp -r /home/linuxbrew/.linuxbrew/Cellar/boost/*/* src/pgm_build_dependencies/boost/
           cp -r /home/linuxbrew/.linuxbrew/Cellar/eigen/*/* src/pgm_build_dependencies/eigen/
           cp -r /home/linuxbrew/.linuxbrew/Cellar/msgpack-cxx/*/* src/pgm_build_dependencies/msgpack_cxx/
-          find . \( -type f ! -exec grep -Iq . {} \; -o -type l \) -delete
+          find src/ \( -type f ! -exec grep -Iq . {} \; -o -type l \) -delete
           ls src/pgm_build_dependencies/nlohmann_json/
           ls src/pgm_build_dependencies/boost/
           ls src/pgm_build_dependencies/eigen/
