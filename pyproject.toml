@@ -40,6 +40,12 @@ dev = [
 [project.urls]
 GitHub = "https://github.com/PowerGridModel/pgm-build-dependencies"
 
+[project.entry-points."cmake.root"]
+Boost = "pgm_build_dependencies.boost"
+Eigen3 = "pgm_build_dependencies.eigen"
+nlohmann_json = "pgm_build_dependencies.nlohmann_json"
+msgpack-cxx = "pgm_build_dependencies.msgpack_cxx"
+
 [tool.setuptools.packages.find]
 where = ["src"]
 namespaces = true
