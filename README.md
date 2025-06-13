@@ -22,19 +22,8 @@ requires = [
 ]
 ```
 
-You can get the header path in Python script as follows:
+In the build process, the entry point `cmake.root` will be installed into the build environment. The build backend, e.g., [`scikit-build-core`](https://github.com/scikit-build/scikit-build-core), can retrieve the `cmake` search paths and use them when invoking `cmake`.
 
-```python
-import pgm_build_dependencies
-
-header_path = pgm_build_dependencies.get_include()
-```
-
-You can also get the path to the header-only libraries in command line:
-
-```bash
-pgm-build-dependencies
-```
 
 ## License
 
