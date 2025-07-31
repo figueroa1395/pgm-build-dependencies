@@ -10,11 +10,11 @@ name: Sync headers from upstream repository (brew)
 on:
   workflow_dispatch:
     inputs:
-    force_publish:
-      description: 'Force publish the headers'
-      required: false
-      default: false
-      type: boolean
+      force_publish:
+        description: 'Force publish the headers'
+        required: false
+        default: false
+        type: boolean
 
   schedule:
     - cron: "0 2 * * 0" # Runs at 02:00 UTC every Sunday
