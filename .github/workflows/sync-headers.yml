@@ -5,6 +5,12 @@
 
 name: Sync headers from upstream repository (brew)
 
+inputs:
+  force_publish:
+    description: 'Force publish the headers'
+    required: false
+    default: 'false'
+
 on:
   workflow_dispatch:
   schedule:
