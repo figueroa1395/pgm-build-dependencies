@@ -3,11 +3,8 @@
 # SPDX-License-Identifier: MPL-2.0
 
 [build-system]
-requires = [
-    "setuptools",
-    "wheel",
-]
-build-backend = "setuptools.build_meta"
+requires = ["hatchling"]
+build-backend = "hatchling.build"
 
 [project]
 name = "pgm-build-dependencies"
@@ -30,6 +27,7 @@ classifiers = [
     "Topic :: Software Development :: Libraries",
 ]
 dependencies = []
+requires-python = ">=3.11"
 
 
 [project.optional-dependencies]
@@ -45,10 +43,3 @@ Boost = "pgm_build_dependencies.boost"
 Eigen3 = "pgm_build_dependencies.eigen"
 nlohmann_json = "pgm_build_dependencies.nlohmann_json"
 msgpack-cxx = "pgm_build_dependencies.msgpack_cxx"
-
-[tool.setuptools.packages.find]
-where = ["src"]
-namespaces = true
-
-[tool.setuptools.package-data]
-pgm_build_dependencies = ["**/*"]
