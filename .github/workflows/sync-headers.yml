@@ -14,7 +14,7 @@ inputs:
 on:
   workflow_dispatch:
   schedule:
-    - cron: "0 2 * * *" # Based on UTC time
+    - cron: "0 2 * * 0" # Runs at 02:00 UTC every Sunday
 
 jobs:
   sync-headers:
@@ -54,7 +54,14 @@ jobs:
           ls src/pgm_build_dependencies/eigen/
           ls src/pgm_build_dependencies/msgpack_cxx/
 
+      - name: build wheel
+        run: |
+          python -m build --wheel --outdir dist
+          ls dist/
+          echo "VERSION=v$(date +'%Y.%m.%d')" >> $GITHUB_ENV
+
       - name: Commit and push changes
+        id: commit
         uses: stefanzweifel/git-auto-commit-action@v6
         with:
           commit_message: Update the headers
@@ -62,3 +69,13 @@ jobs:
           commit_user_name: GitHub Actions Bot
           commit_user_email: actions@github.com
           commit_author: GitHub Actions Bot <actions@github.com>
+
+      - name: publish
+        if: ${{ inputs.force_publish == 'true' || steps.commit.outputs.changes_detected == 'true' }}
+        uses: softprops/action-gh-release@v2
+        with:
+          tag_name: ${{ env.VERSION }}
+          files: dist/*.whl
+          draft: false
+          prerelease: false
+          target_commitish: ${{ github.sha }}
