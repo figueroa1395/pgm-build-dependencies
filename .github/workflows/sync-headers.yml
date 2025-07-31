@@ -5,14 +5,17 @@
 
 name: Sync headers from upstream repository (brew)
 
-inputs:
-  force_publish:
-    description: 'Force publish the headers'
-    required: false
-    default: 'false'
+
 
 on:
   workflow_dispatch:
+    inputs:
+    force_publish:
+      description: 'Force publish the headers'
+      required: false
+      default: false
+      type: boolean
+
   schedule:
     - cron: "0 2 * * 0" # Runs at 02:00 UTC every Sunday
 
@@ -71,7 +74,7 @@ jobs:
           commit_author: GitHub Actions Bot <actions@github.com>
 
       - name: publish
-        if: ${{ inputs.force_publish == 'true' || steps.commit.outputs.changes_detected == 'true' }}
+        if: ${{ inputs.force_publish == 'true' || steps.commit.outputs.changes_detected }}
         uses: softprops/action-gh-release@v2
         with:
           tag_name: ${{ env.VERSION }}
