@@ -47,6 +47,10 @@ jobs:
 
       - name: copy headers
         run: |
+          rm -rf src/pgm_build_dependencies/nlohmann_json/*
+          rm -rf src/pgm_build_dependencies/boost/*
+          rm -rf src/pgm_build_dependencies/eigen/*
+          rm -rf src/pgm_build_dependencies/msgpack_cxx/*
           cp -r /home/linuxbrew/.linuxbrew/Cellar/nlohmann-json/*/* src/pgm_build_dependencies/nlohmann_json/
           cp -r /home/linuxbrew/.linuxbrew/Cellar/boost/*/* src/pgm_build_dependencies/boost/
           cp -r /home/linuxbrew/.linuxbrew/Cellar/eigen/*/* src/pgm_build_dependencies/eigen/
