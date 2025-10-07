@@ -61,6 +61,20 @@ jobs:
           ls src/pgm_build_dependencies/eigen/
           ls src/pgm_build_dependencies/msgpack_cxx/
 
+      - name: License scan - eigen headers
+        uses: fossology/fossology-action@v1
+        with:
+          scan_mode: repo
+          scanners: 'nomos ojo copyright keyword'
+          report_format: 'SPDX_JSON'
+          scan_dir: src/pgm_build_dependencies/eigen/
+
+      - name: Upload Scan Results Artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: Fossology scan results
+          path: results/
+
       - name: build wheel
         run: |
           python -m build --wheel --outdir dist
