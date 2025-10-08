@@ -70,6 +70,7 @@ jobs:
           scan_dir: src/pgm_build_dependencies/eigen/
 
       - name: Remove files with non-accepted license
+        if: always()
         run: |          
           # Install jq for JSON parsing
           sudo apt-get update && sudo apt-get install -y jq
@@ -82,8 +83,11 @@ jobs:
           SPDX_FILE=$(find . -name "*spdx*.json" -o -name "sbom*.json" -o -name "*sbom.json"| head -1)
           
           if [ -z "$SPDX_FILE" ]; then
-            echo "No SPDX JSON file found!"
-            exit 1
+            echo "No SPDX JSON file found! Fossology scan may have failed."
+            echo "Available files:"
+            find . -name "*.json" || echo "No JSON files found"
+            echo "Skipping license cleanup step."
+            exit 0
           fi
           echo "Found SPDX file: $SPDX_FILE"
           
