@@ -64,15 +64,26 @@ jobs:
       - name: License scan - eigen headers
         uses: fossology/fossology-action@v1
         with:
-          scan_mode: repo
-          scanners: 'nomos ojo copyright keyword'
+          scan_mode: scan-dir
+          scanners: 'nomos ojo'
           report_format: 'SPDX_JSON'
           scan_dir: src/pgm_build_dependencies/eigen/
 
+      - name: List fossology output
+        if: always()
+        run: |
+          echo "=== Current directory contents ==="
+          ls -la
+          echo "=== Looking for result directories ==="
+          find . -name "*result*" -type d
+          echo "=== Looking for output files ==="
+          find . -name "*.json" -o -name "*spdx*" -o -name "*SPDX*"
+
       - name: Upload Scan Results Artifact
+        if: always()
         uses: actions/upload-artifact@v4
         with:
-          name: Fossology scan results
+          name: license-scan-results
           path: results/
 
       - name: build wheel
