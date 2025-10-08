@@ -63,23 +63,19 @@ jobs:
 
       - name: License scan - eigen headers
         uses: fossology/fossology-action@v1
+        continue-on-error: true
         with:
           scan_mode: scan-dir
           scanners: 'nomos ojo'
           report_format: 'SPDX_JSON'
           scan_dir: src/pgm_build_dependencies/eigen/
 
+      - name: Install jq
+        run: sudo apt-get update && sudo apt-get install -y jq
+
       - name: Remove files with non-accepted license
         id: license-cleanup
-        if: always()
         run: |          
-          # Install jq for JSON parsing
-          sudo apt-get update && sudo apt-get install -y jq
-          
-          echo "=== Looking for SPDX files ==="
-          ls -la
-          find . -name "*.json" -type f
-          
           # Find the SPDX JSON file
           SPDX_FILE=$(find . -name "*spdx*.json" -o -name "sbom*.json" -o -name "*sbom.json"| head -1)
           
@@ -87,12 +83,11 @@ jobs:
             echo "No SPDX JSON file found! Fossology scan may have failed."
             echo "Available files:"
             find . -name "*.json" || echo "No JSON files found"
-            echo "Skipping license cleanup step."
-            exit 0
+            exit 1
           fi
           echo "Found SPDX file: $SPDX_FILE"
           
-          # Get files with GPL in their licenses
+          # Get badly licensed files
           BAD_FILES=$(jq -r '
             .files[] | 
             select(.licenseInfoInFiles[]? | type == "string" and test("GPL"; "i")) | 
@@ -121,7 +116,6 @@ jobs:
         continue-on-error: true
 
       - name: Check license cleanup status
-        if: always()
         run: |
           if [ "${{ steps.license-cleanup.outcome }}" = "failure" ]; then
             echo "WARNING: License cleanup step failed!"
@@ -131,21 +125,18 @@ jobs:
           fi
 
       - name: Upload Scan Results Artifact
-        if: always()
         uses: actions/upload-artifact@v4
         with:
           name: license-scan-results
           path: results/
 
       - name: build wheel
-        if: always()
         run: |
           python -m build --wheel --outdir dist
           ls dist/
           echo "VERSION=v$(date +'%Y.%m.%d')" >> $GITHUB_ENV
 
       - name: Commit and push changes
-        if: always()
         id: commit
         uses: stefanzweifel/git-auto-commit-action@v6
         with:
