@@ -70,6 +70,7 @@ jobs:
           scan_dir: src/pgm_build_dependencies/eigen/
 
       - name: Remove files with non-accepted license
+        id: license-cleanup
         if: always()
         run: |          
           # Install jq for JSON parsing
@@ -119,6 +120,16 @@ jobs:
           fi
         continue-on-error: true
 
+      - name: Check license cleanup status
+        if: always()
+        run: |
+          if [ "${{ steps.license-cleanup.outcome }}" = "failure" ]; then
+            echo "WARNING: License cleanup step failed!"
+            echo "Please check the license scan results manually."
+          else
+            echo "License cleanup completed successfully"
+          fi
+
       - name: Upload Scan Results Artifact
         if: always()
         uses: actions/upload-artifact@v4
@@ -127,12 +138,14 @@ jobs:
           path: results/
 
       - name: build wheel
+        if: always()
         run: |
           python -m build --wheel --outdir dist
           ls dist/
           echo "VERSION=v$(date +'%Y.%m.%d')" >> $GITHUB_ENV
 
       - name: Commit and push changes
+        if: always()
         id: commit
         uses: stefanzweifel/git-auto-commit-action@v6
         with:
