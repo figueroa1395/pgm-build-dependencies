@@ -69,20 +69,18 @@ jobs:
           report_format: 'SPDX_JSON'
           scan_dir: src/pgm_build_dependencies/eigen/
 
-      - name: Upload Scan Results Artifact
-        if: always()
-        uses: actions/upload-artifact@v4
-        with:
-          name: license-scan-results
-          path: results/
-
       - name: Remove files with non-accepted license
         run: |          
           # Install jq for JSON parsing
           sudo apt-get update && sudo apt-get install -y jq
           
+          echo "=== Looking for SPDX files ==="
+          ls -la
+          find . -name "*.json" -type f
+          
           # Find the SPDX JSON file
-          SPDX_FILE=$(find . -name "*spdx*.json" | head -1)
+          SPDX_FILE=$(find . -name "*spdx*.json" -o -name "sbom*.json" -o -name "*sbom.json"| head -1)
+          
           if [ -z "$SPDX_FILE" ]; then
             echo "No SPDX JSON file found!"
             exit 1
@@ -116,6 +114,13 @@ jobs:
             done
           fi
         continue-on-error: true
+
+      - name: Upload Scan Results Artifact
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: license-scan-results
+          path: results/
 
       - name: build wheel
         run: |
