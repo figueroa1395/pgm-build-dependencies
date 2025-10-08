@@ -69,22 +69,53 @@ jobs:
           report_format: 'SPDX_JSON'
           scan_dir: src/pgm_build_dependencies/eigen/
 
-      - name: List fossology output
-        if: always()
-        run: |
-          echo "=== Current directory contents ==="
-          ls -la
-          echo "=== Looking for result directories ==="
-          find . -name "*result*" -type d
-          echo "=== Looking for output files ==="
-          find . -name "*.json" -o -name "*spdx*" -o -name "*SPDX*"
-
       - name: Upload Scan Results Artifact
         if: always()
         uses: actions/upload-artifact@v4
         with:
           name: license-scan-results
           path: results/
+
+      - name: Remove files with non-accepted license
+        run: |          
+          # Install jq for JSON parsing
+          sudo apt-get update && sudo apt-get install -y jq
+          
+          # Find the SPDX JSON file
+          SPDX_FILE=$(find . -name "*spdx*.json" | head -1)
+          if [ -z "$SPDX_FILE" ]; then
+            echo "No SPDX JSON file found!"
+            exit 1
+          fi
+          echo "Found SPDX file: $SPDX_FILE"
+          
+          # Get files with GPL in their licenses
+          BAD_FILES=$(jq -r '
+            .files[] | 
+            select(.licenseInfoInFiles[]? | type == "string" and test("GPL"; "i")) | 
+            .fileName
+          ' "$SPDX_FILE")
+          
+          if [ -z "$BAD_FILES" ]; then
+            echo "No badly licensed files found - nothing to delete!"
+          else
+            echo "Badly licensed files found:"
+            echo "$BAD_FILES" | while read -r file_name; do
+              if [ -n "$file_name" ]; then
+                echo " - $file_name"
+                
+                # Construct full path and delete
+                full_path="src/pgm_build_dependencies/eigen/$file_name"
+                if [ -f "$full_path" ]; then
+                  rm -f "$full_path"
+                  echo "Deleted: $full_path"
+                else
+                  echo "File not found: $full_path"
+                fi
+              fi
+            done
+          fi
+        continue-on-error: true
 
       - name: build wheel
         run: |
