@@ -136,7 +136,14 @@ jobs:
           ls dist/
           echo "VERSION=v$(date +'%Y.%m.%d')" >> $GITHUB_ENV
 
+      - name: Debug workflow trigger
+        run: |
+          echo "Event name: ${{ github.event_name }}"
+          echo "Force publish input: ${{ inputs.force_publish }}"
+          echo "Will commit on schedule or when force_publish is true: ${{ github.event_name == 'schedule' || inputs.force_publish }}"
+
       - name: Commit and push changes
+        if: ${{ github.event_name == 'schedule' || inputs.force_publish }}
         id: commit
         uses: stefanzweifel/git-auto-commit-action@v6
         with:
@@ -147,7 +154,7 @@ jobs:
           commit_author: GitHub Actions Bot <actions@github.com>
 
       - name: publish
-        if: ${{ inputs.force_publish || steps.commit.outputs.changes_detected == 'true'  }}
+        if: ${{ inputs.force_publish || (steps.commit.outputs.changes_detected == 'true' && github.event_name == 'schedule') }}
         uses: softprops/action-gh-release@v2
         with:
           tag_name: ${{ env.VERSION }}
