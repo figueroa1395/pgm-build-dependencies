@@ -1,17 +1,17 @@
 Following licenses found which are not allow listed:
 File: COPYING.BSD
 License:
-	BSD-3-Clause at lines 9, 7, 12, 4
+	BSD-3-Clause at lines 12, 9, 7, 4
 File: sbom.spdx.json
 Licenses:
-	MPL at lines 27, 57
-	LGPL-2.1-only at lines 16, 21, 15, 22, 23, 14
+	LGPL-2.1-only at lines 22, 23, 15, 14, 16, 21
 	CC0-1.0 at line 11
+	MPL at lines 57, 27
 File: COPYING.README
 Licenses:
+	LGPL-2.1-only at lines 22, 23, 15, 14, 16, 21
 	Dual-license at line 5
 	MPL-2.0 at lines 7, 8
-	LGPL-2.1-only at lines 16, 21, 15, 22, 23, 14
 File: include/eigen3/unsupported/Eigen/NumericalDiff
 License:
 	MPL-2.0 at lines 7, 8
@@ -44,7 +44,7 @@ License:
 	MPL-2.0-no-copyleft-exception at lines 359, 369, 372
 File: COPYING.MINPACK
 License:
-	BSD-2-Clause at lines 3, 7, 11, 16
+	BSD-2-Clause at lines 11, 7, 16, 3
 File: include/eigen3/unsupported/Eigen/CXX11/src/Tensor/TensorInitializer.h
 License:
 	MPL-2.0 at lines 7, 8
@@ -53,7 +53,7 @@ License:
 	MPL-2.0 at lines 7, 8
 File: COPYING.LGPL
 License:
-	LGPL-2.1-only at lines 16, 21, 15, 22, 23, 14
+	LGPL-2.1-only at lines 22, 23, 15, 14, 16, 21
 File: include/eigen3/unsupported/Eigen/CXX11/src/Tensor/TensorContractionGpu.h
 License:
 	MPL-2.0 at lines 7, 8
@@ -113,17 +113,17 @@ License:
 	MPL-2.0 at lines 7, 8
 File: COPYING.GPL
 License:
-	GPL-3.0-only at lines 1, 556, 559, 552, 521, 4, 638
+	GPL-3.0-only at lines 521, 638, 552, 556, 1, 559, 4
 File: include/eigen3/unsupported/Eigen/CXX11/src/Tensor/TensorShuffling.h
 License:
 	MPL-2.0 at lines 7, 8
 File: include/eigen3/unsupported/Eigen/CXX11/src/Tensor/TensorExpr.h
 License:
 	MPL-2.0 at lines 7, 8
-File: include/eigen3/unsupported/Eigen/SpecialFunctions
+File: include/eigen3/unsupported/Eigen/CXX11/src/ThreadPool/ThreadCancel.h
 License:
 	MPL-2.0 at lines 7, 8
-File: include/eigen3/unsupported/Eigen/CXX11/src/ThreadPool/ThreadCancel.h
+File: include/eigen3/unsupported/Eigen/SpecialFunctions
 License:
 	MPL-2.0 at lines 7, 8
 File: include/eigen3/unsupported/Eigen/CXX11/src/Tensor/TensorDimensions.h
@@ -135,10 +135,10 @@ License:
 File: include/eigen3/unsupported/Eigen/CXX11/ThreadPool
 License:
 	MPL-2.0 at lines 7, 8
-File: include/eigen3/unsupported/Eigen/CXX11/src/ThreadPool/RunQueue.h
+File: include/eigen3/unsupported/Eigen/CXX11/src/Tensor/TensorIntDiv.h
 License:
 	MPL-2.0 at lines 7, 8
-File: include/eigen3/unsupported/Eigen/CXX11/src/Tensor/TensorIntDiv.h
+File: include/eigen3/unsupported/Eigen/CXX11/src/ThreadPool/RunQueue.h
 License:
 	MPL-2.0 at lines 7, 8
 File: include/eigen3/unsupported/Eigen/CXX11/src/TensorSymmetry/Symmetry.h
@@ -153,10 +153,10 @@ License:
 File: include/eigen3/unsupported/Eigen/CXX11/src/Tensor/TensorContractionSycl.h
 License:
 	MPL-2.0 at lines 7, 8
-File: include/eigen3/unsupported/Eigen/CXX11/src/Tensor/TensorReductionSycl.h
+File: include/eigen3/unsupported/Eigen/CXX11/src/util/CXX11Meta.h
 License:
 	MPL-2.0 at lines 7, 8
-File: include/eigen3/unsupported/Eigen/CXX11/src/util/CXX11Meta.h
+File: include/eigen3/unsupported/Eigen/CXX11/src/Tensor/TensorReductionSycl.h
 License:
 	MPL-2.0 at lines 7, 8
 File: include/eigen3/unsupported/Eigen/CXX11/src/Tensor/TensorForwardDeclarations.h
@@ -174,13 +174,13 @@ License:
 File: include/eigen3/unsupported/Eigen/CXX11/src/Tensor/TensorImagePatch.h
 License:
 	MPL-2.0 at lines 7, 8
-File: include/eigen3/unsupported/Eigen/CXX11/src/Tensor/TensorIO.h
-License:
-	MPL-2.0 at lines 7, 8
 File: include/eigen3/unsupported/Eigen/MPRealSupport
 Licenses:
 	MPL-2.0 at lines 7, 8
-	GPL at lines 83, 74, 35, 34
+	GPL at lines 83, 74, 34, 35
+File: include/eigen3/unsupported/Eigen/CXX11/src/Tensor/TensorIO.h
+License:
+	MPL-2.0 at lines 7, 8
 File: include/eigen3/unsupported/Eigen/KroneckerProduct
 License:
 	MPL-2.0 at lines 7, 8
@@ -190,22 +190,22 @@ License:
 File: include/eigen3/unsupported/Eigen/NonLinearOptimization
 License:
 	MPL-2.0 at lines 7, 8
-File: include/eigen3/unsupported/Eigen/CXX11/src/Tensor/TensorContractionThreadPool.h
-License:
-	MPL-2.0 at lines 7, 8
 File: include/eigen3/unsupported/Eigen/CXX11/src/Tensor/TensorGenerator.h
 License:
 	MPL-2.0 at lines 7, 8
-File: include/eigen3/unsupported/Eigen/src/SpecialFunctions/BesselFunctionsPacketMath.h
+File: include/eigen3/unsupported/Eigen/CXX11/src/Tensor/TensorContractionThreadPool.h
 License:
 	MPL-2.0 at lines 7, 8
-File: include/eigen3/unsupported/Eigen/CXX11/src/Tensor/TensorFixedSize.h
+File: include/eigen3/unsupported/Eigen/src/SpecialFunctions/BesselFunctionsPacketMath.h
 License:
 	MPL-2.0 at lines 7, 8
 File: include/eigen3/unsupported/Eigen/src/SpecialFunctions/BesselFunctionsHalf.h
 License:
 	MPL-2.0 at lines 7, 8
 File: include/eigen3/unsupported/Eigen/CXX11/src/Tensor/TensorCostModel.h
+License:
+	MPL-2.0 at lines 7, 8
+File: include/eigen3/unsupported/Eigen/CXX11/src/Tensor/TensorFixedSize.h
 License:
 	MPL-2.0 at lines 7, 8
 File: include/eigen3/unsupported/Eigen/src/SpecialFunctions/SpecialFunctionsPacketMath.h
@@ -226,10 +226,10 @@ License:
 File: include/eigen3/unsupported/Eigen/CXX11/src/Tensor/TensorConvolutionSycl.h
 License:
 	MPL-2.0 at lines 7, 8
-File: include/eigen3/unsupported/Eigen/src/SpecialFunctions/SpecialFunctionsArrayAPI.h
+File: include/eigen3/unsupported/Eigen/CXX11/src/Tensor/TensorScanSycl.h
 License:
 	MPL-2.0 at lines 7, 8
-File: include/eigen3/unsupported/Eigen/CXX11/src/Tensor/TensorScanSycl.h
+File: include/eigen3/unsupported/Eigen/src/SpecialFunctions/SpecialFunctionsArrayAPI.h
 License:
 	MPL-2.0 at lines 7, 8
 File: include/eigen3/unsupported/Eigen/src/Polynomials/PolynomialUtils.h
@@ -238,10 +238,10 @@ License:
 File: include/eigen3/unsupported/Eigen/CXX11/src/Tensor/TensorPatch.h
 License:
 	MPL-2.0 at lines 7, 8
-File: include/eigen3/unsupported/Eigen/src/SparseExtra/MatrixMarketIterator.h
+File: include/eigen3/unsupported/Eigen/CXX11/src/Tensor/TensorScan.h
 License:
 	MPL-2.0 at lines 7, 8
-File: include/eigen3/unsupported/Eigen/CXX11/src/Tensor/TensorScan.h
+File: include/eigen3/unsupported/Eigen/src/SparseExtra/MatrixMarketIterator.h
 License:
 	MPL-2.0 at lines 7, 8
 File: include/eigen3/unsupported/Eigen/CXX11/src/Tensor/TensorEvalTo.h
@@ -253,22 +253,22 @@ License:
 File: include/eigen3/unsupported/Eigen/CXX11/src/Tensor/TensorContractionMapper.h
 License:
 	MPL-2.0 at lines 7, 8
-File: include/eigen3/unsupported/Eigen/CXX11/src/Tensor/TensorDevice.h
-License:
-	MPL-2.0 at lines 7, 8
 File: include/eigen3/unsupported/Eigen/src/AutoDiff/AutoDiffScalar.h
 License:
 	MPL-2.0 at lines 7, 8
-File: include/eigen3/unsupported/Eigen/src/IterativeSolvers/IncompleteLU.h
+File: include/eigen3/unsupported/Eigen/CXX11/src/Tensor/TensorDevice.h
 License:
 	MPL-2.0 at lines 7, 8
 File: include/eigen3/unsupported/Eigen/CXX11/src/Tensor/TensorInflation.h
 License:
 	MPL-2.0 at lines 7, 8
-File: include/eigen3/unsupported/Eigen/CXX11/src/Tensor/TensorPadding.h
+File: include/eigen3/unsupported/Eigen/src/IterativeSolvers/IncompleteLU.h
 License:
 	MPL-2.0 at lines 7, 8
 File: include/eigen3/unsupported/Eigen/src/IterativeSolvers/IDRS.h
+License:
+	MPL-2.0 at lines 7, 8
+File: include/eigen3/unsupported/Eigen/CXX11/src/Tensor/TensorPadding.h
 License:
 	MPL-2.0 at lines 7, 8
 File: include/eigen3/unsupported/Eigen/CXX11/src/Tensor/TensorMacros.h
@@ -280,16 +280,16 @@ License:
 File: include/eigen3/unsupported/Eigen/CXX11/src/Tensor/TensorArgMax.h
 License:
 	MPL-2.0 at lines 7, 8
-File: include/eigen3/unsupported/Eigen/src/Skyline/SkylineMatrix.h
-License:
-	MPL-2.0 at lines 7, 8
 File: include/eigen3/unsupported/Eigen/CXX11/src/Tensor/TensorIndexList.h
 License:
 	MPL-2.0 at lines 7, 8
-File: include/eigen3/unsupported/Eigen/CXX11/src/Tensor/TensorLayoutSwap.h
+File: include/eigen3/unsupported/Eigen/src/Skyline/SkylineMatrix.h
 License:
 	MPL-2.0 at lines 7, 8
 File: include/eigen3/unsupported/Eigen/src/Skyline/SkylineStorage.h
+License:
+	MPL-2.0 at lines 7, 8
+File: include/eigen3/unsupported/Eigen/CXX11/src/Tensor/TensorLayoutSwap.h
 License:
 	MPL-2.0 at lines 7, 8
 File: include/eigen3/unsupported/Eigen/CXX11/src/Tensor/TensorStriding.h
@@ -301,10 +301,10 @@ License:
 File: include/eigen3/unsupported/Eigen/CXX11/src/ThreadPool/ThreadYield.h
 License:
 	MPL-2.0 at lines 7, 8
-File: include/eigen3/unsupported/Eigen/CXX11/src/Tensor/TensorFunctors.h
+File: include/eigen3/unsupported/Eigen/src/MatrixFunctions/MatrixPower.h
 License:
 	MPL-2.0 at lines 7, 8
-File: include/eigen3/unsupported/Eigen/src/MatrixFunctions/MatrixPower.h
+File: include/eigen3/unsupported/Eigen/CXX11/src/Tensor/TensorFunctors.h
 License:
 	MPL-2.0 at lines 7, 8
 File: include/eigen3/unsupported/Eigen/CXX11/src/ThreadPool/ThreadPoolInterface.h
@@ -322,10 +322,10 @@ License:
 File: include/eigen3/unsupported/Eigen/CXX11/src/ThreadPool/NonBlockingThreadPool.h
 License:
 	MPL-2.0 at lines 7, 8
-File: include/eigen3/unsupported/Eigen/CXX11/src/Tensor/TensorGpuHipCudaDefines.h
+File: include/eigen3/unsupported/Eigen/src/NonLinearOptimization/LevenbergMarquardt.h
 License:
 	MPL-2.0 at lines 7, 8
-File: include/eigen3/unsupported/Eigen/src/NonLinearOptimization/LevenbergMarquardt.h
+File: include/eigen3/unsupported/Eigen/CXX11/src/Tensor/TensorGpuHipCudaDefines.h
 License:
 	MPL-2.0 at lines 7, 8
 File: include/eigen3/unsupported/Eigen/CXX11/src/TensorSymmetry/DynamicSymmetry.h
@@ -345,13 +345,13 @@ License:
 	MPL-2.0 at lines 7, 8
 File: include/eigen3/unsupported/Eigen/FFT
 Licenses:
-	MPL-2.0 at lines 7, 8
-	GPL at lines 83, 74, 35, 34
 	LGPL at line 90
-File: include/eigen3/unsupported/Eigen/CXX11/src/Tensor/TensorFFT.h
+	MPL-2.0 at lines 7, 8
+	GPL at lines 83, 74, 34, 35
+File: include/eigen3/unsupported/Eigen/Polynomials
 License:
 	MPL-2.0 at lines 7, 8
-File: include/eigen3/unsupported/Eigen/Polynomials
+File: include/eigen3/unsupported/Eigen/CXX11/src/Tensor/TensorFFT.h
 License:
 	MPL-2.0 at lines 7, 8
 File: include/eigen3/Eigen/Eigenvalues
@@ -360,13 +360,16 @@ License:
 File: include/eigen3/Eigen/Jacobi
 License:
 	MPL-2.0 at lines 7, 8
-File: include/eigen3/unsupported/Eigen/CXX11/src/Tensor/TensorBase.h
-License:
-	MPL-2.0 at lines 7, 8
 File: include/eigen3/unsupported/Eigen/AutoDiff
 License:
 	MPL-2.0 at lines 7, 8
+File: include/eigen3/unsupported/Eigen/CXX11/src/Tensor/TensorBase.h
+License:
+	MPL-2.0 at lines 7, 8
 File: include/eigen3/Eigen/Sparse
+License:
+	MPL-2.0 at lines 7, 8
+File: include/eigen3/unsupported/Eigen/LevenbergMarquardt
 License:
 	MPL-2.0 at lines 7, 8
 File: include/eigen3/Eigen/Core
@@ -375,13 +378,7 @@ License:
 File: include/eigen3/unsupported/Eigen/CXX11/src/ThreadPool/EventCount.h
 License:
 	MPL-2.0 at lines 7, 8
-File: include/eigen3/unsupported/Eigen/LevenbergMarquardt
-License:
-	MPL-2.0 at lines 7, 8
 File: include/eigen3/Eigen/Cholesky
-License:
-	MPL-2.0 at lines 7, 8
-File: include/eigen3/unsupported/Eigen/CXX11/src/ThreadPool/Barrier.h
 License:
 	MPL-2.0 at lines 7, 8
 File: include/eigen3/unsupported/Eigen/Splines
@@ -390,22 +387,25 @@ License:
 File: include/eigen3/Eigen/SparseQR
 License:
 	MPL-2.0 at lines 7, 8
+File: include/eigen3/unsupported/Eigen/CXX11/src/ThreadPool/Barrier.h
+License:
+	MPL-2.0 at lines 7, 8
 File: include/eigen3/Eigen/OrderingMethods
 License:
 	MPL-2.0 at lines 7, 8
 File: include/eigen3/unsupported/Eigen/AdolcForward
 License:
 	MPL-2.0 at lines 7, 8
-File: include/eigen3/unsupported/Eigen/CXX11/src/ThreadPool/ThreadLocal.h
-License:
-	MPL-2.0 at lines 7, 8
 File: include/eigen3/Eigen/StdDeque
 License:
 	MPL-2.0 at lines 7, 8
-File: include/eigen3/Eigen/src/CholmodSupport/CholmodSupport.h
+File: include/eigen3/unsupported/Eigen/CXX11/src/ThreadPool/ThreadLocal.h
 License:
 	MPL-2.0 at lines 7, 8
 File: include/eigen3/unsupported/Eigen/BVH
+License:
+	MPL-2.0 at lines 7, 8
+File: include/eigen3/Eigen/src/CholmodSupport/CholmodSupport.h
 License:
 	MPL-2.0 at lines 7, 8
 File: include/eigen3/unsupported/Eigen/CXX11/src/TensorSymmetry/StaticSymmetry.h
@@ -417,10 +417,10 @@ License:
 File: include/eigen3/unsupported/Eigen/src/SpecialFunctions/SpecialFunctionsBFloat16.h
 License:
 	MPL-2.0 at lines 7, 8
-File: include/eigen3/unsupported/Eigen/CXX11/src/TensorSymmetry/util/TemplateGroupTheory.h
+File: include/eigen3/Eigen/src/Eigenvalues/EigenSolver.h
 License:
 	MPL-2.0 at lines 7, 8
-File: include/eigen3/Eigen/src/Eigenvalues/EigenSolver.h
+File: include/eigen3/unsupported/Eigen/CXX11/src/TensorSymmetry/util/TemplateGroupTheory.h
 License:
 	MPL-2.0 at lines 7, 8
 File: include/eigen3/unsupported/Eigen/src/SpecialFunctions/BesselFunctionsBFloat16.h
@@ -432,16 +432,16 @@ License:
 File: include/eigen3/unsupported/Eigen/CXX11/src/util/EmulateArray.h
 License:
 	MPL-2.0 at lines 7, 8
-File: include/eigen3/Eigen/src/Eigenvalues/SelfAdjointEigenSolver.h
-License:
-	MPL-2.0 at lines 7, 8
 File: include/eigen3/unsupported/Eigen/src/SpecialFunctions/SpecialFunctionsHalf.h
 License:
 	MPL-2.0 at lines 7, 8
-File: include/eigen3/unsupported/Eigen/AlignedVector3
+File: include/eigen3/Eigen/src/Eigenvalues/SelfAdjointEigenSolver.h
 License:
 	MPL-2.0 at lines 7, 8
 File: include/eigen3/Eigen/src/KLUSupport/KLUSupport.h
+License:
+	MPL-2.0 at lines 7, 8
+File: include/eigen3/unsupported/Eigen/AlignedVector3
 License:
 	MPL-2.0 at lines 7, 8
 File: include/eigen3/unsupported/Eigen/src/Polynomials/PolynomialSolver.h
@@ -452,14 +452,14 @@ License:
 	MPL-2.0 at lines 7, 8
 File: include/eigen3/Eigen/src/SVD/JacobiSVD_LAPACKE.h
 License:
-	BSD-3-Clause at lines 9, 7, 12, 4
+	BSD-3-Clause at lines 12, 9, 7, 4
 File: include/eigen3/unsupported/Eigen/IterativeSolvers
 License:
 	MPL-2.0 at lines 7, 8
-File: include/eigen3/Eigen/src/SVD/SVDBase.h
+File: include/eigen3/unsupported/Eigen/src/SparseExtra/RandomSetter.h
 License:
 	MPL-2.0 at lines 7, 8
-File: include/eigen3/unsupported/Eigen/src/SparseExtra/RandomSetter.h
+File: include/eigen3/Eigen/src/SVD/SVDBase.h
 License:
 	MPL-2.0 at lines 7, 8
 File: include/eigen3/Eigen/src/SparseLU/SparseLU_column_dfs.h
@@ -486,16 +486,16 @@ Licenses:
 File: include/eigen3/unsupported/Eigen/src/AutoDiff/AutoDiffVector.h
 License:
 	MPL-2.0 at lines 7, 8
-File: include/eigen3/unsupported/Eigen/ArpackSupport
-License:
-	MPL-2.0 at lines 7, 8
 File: include/eigen3/Eigen/src/SparseLU/SparseLU_Structs.h
 License:
 	MPL-2.0 at lines 7, 8
-File: include/eigen3/Eigen/src/SparseLU/SparseLU_kernel_bmod.h
+File: include/eigen3/unsupported/Eigen/ArpackSupport
 License:
 	MPL-2.0 at lines 7, 8
 File: include/eigen3/unsupported/Eigen/src/IterativeSolvers/MINRES.h
+License:
+	MPL-2.0 at lines 7, 8
+File: include/eigen3/Eigen/src/SparseLU/SparseLU_kernel_bmod.h
 License:
 	MPL-2.0 at lines 7, 8
 File: include/eigen3/unsupported/Eigen/src/Eigenvalues/ArpackSelfAdjointEigenSolver.h
@@ -509,7 +509,7 @@ License:
 	MPL-2.0 at lines 7, 8
 File: include/eigen3/Eigen/src/Core/products/GeneralMatrixMatrix_BLAS.h
 License:
-	BSD-3-Clause at lines 9, 7, 12, 4
+	BSD-3-Clause at lines 12, 9, 7, 4
 File: include/eigen3/unsupported/Eigen/src/SpecialFunctions/BesselFunctionsImpl.h
 License:
 	MPL-2.0 at lines 7, 8
@@ -518,15 +518,18 @@ License:
 	MPL-2.0 at lines 7, 8
 File: include/eigen3/Eigen/src/Core/products/TriangularSolverMatrix_BLAS.h
 License:
-	BSD-3-Clause at lines 9, 7, 12, 4
+	BSD-3-Clause at lines 12, 9, 7, 4
 File: include/eigen3/unsupported/Eigen/src/IterativeSolvers/IterationController.h
 Licenses:
+	LGPL-2.1-only at lines 22, 23, 15, 14, 16, 21
 	NotreDame-style at line 24
-	LGPL-2.1-only at lines 16, 21, 15, 22, 23, 14
 File: include/eigen3/Eigen/src/Core/products/TriangularMatrixMatrix.h
 License:
 	MPL-2.0 at lines 7, 8
 File: include/eigen3/unsupported/Eigen/src/SpecialFunctions/SpecialFunctionsImpl.h
+License:
+	MPL-2.0 at lines 7, 8
+File: include/eigen3/unsupported/Eigen/src/IterativeSolvers/Scaling.h
 License:
 	MPL-2.0 at lines 7, 8
 File: include/eigen3/Eigen/src/Core/products/TriangularSolverMatrix.h
@@ -534,10 +537,7 @@ License:
 	MPL-2.0 at lines 7, 8
 File: include/eigen3/Eigen/src/Core/products/SelfadjointMatrixMatrix_BLAS.h
 License:
-	BSD-3-Clause at lines 9, 7, 12, 4
-File: include/eigen3/unsupported/Eigen/src/IterativeSolvers/Scaling.h
-License:
-	MPL-2.0 at lines 7, 8
+	BSD-3-Clause at lines 12, 9, 7, 4
 File: include/eigen3/unsupported/Eigen/src/SpecialFunctions/BesselFunctionsArrayAPI.h
 License:
 	MPL-2.0 at lines 7, 8
@@ -547,16 +547,16 @@ License:
 File: include/eigen3/unsupported/Eigen/src/Skyline/SkylineProduct.h
 License:
 	MPL-2.0 at lines 7, 8
-File: include/eigen3/unsupported/Eigen/src/SpecialFunctions/SpecialFunctionsFunctors.h
-License:
-	MPL-2.0 at lines 7, 8
 File: include/eigen3/Eigen/src/Core/GenericPacketMath.h
 License:
 	MPL-2.0 at lines 7, 8
-File: include/eigen3/Eigen/src/Core/DenseStorage.h
+File: include/eigen3/unsupported/Eigen/src/SpecialFunctions/SpecialFunctionsFunctors.h
 License:
 	MPL-2.0 at lines 7, 8
 File: include/eigen3/unsupported/Eigen/src/Skyline/SkylineUtil.h
+License:
+	MPL-2.0 at lines 7, 8
+File: include/eigen3/Eigen/src/Core/DenseStorage.h
 License:
 	MPL-2.0 at lines 7, 8
 File: include/eigen3/unsupported/Eigen/src/NumericalDiff/NumericalDiff.h
@@ -586,10 +586,10 @@ License:
 File: include/eigen3/unsupported/Eigen/src/SparseExtra/BlockSparseMatrix.h
 License:
 	MPL-2.0 at lines 7, 8
-File: include/eigen3/Eigen/src/Core/CoreIterators.h
+File: include/eigen3/unsupported/Eigen/src/MatrixFunctions/MatrixLogarithm.h
 License:
 	MPL-2.0 at lines 7, 8
-File: include/eigen3/unsupported/Eigen/src/MatrixFunctions/MatrixLogarithm.h
+File: include/eigen3/Eigen/src/Core/CoreIterators.h
 License:
 	MPL-2.0 at lines 7, 8
 File: include/eigen3/unsupported/Eigen/src/SparseExtra/MarketIO.h
@@ -601,16 +601,16 @@ License:
 File: include/eigen3/unsupported/Eigen/src/Splines/SplineFwd.h
 License:
 	MPL-2.0 at lines 7, 8
-File: include/eigen3/Eigen/src/Core/functors/UnaryFunctors.h
-License:
-	MPL-2.0 at lines 7, 8
 File: include/eigen3/unsupported/Eigen/src/AutoDiff/AutoDiffJacobian.h
 License:
 	MPL-2.0 at lines 7, 8
-File: include/eigen3/Eigen/src/Core/Assign.h
+File: include/eigen3/Eigen/src/Core/functors/UnaryFunctors.h
 License:
 	MPL-2.0 at lines 7, 8
 File: include/eigen3/unsupported/Eigen/src/MoreVectorization/MathFunctions.h
+License:
+	MPL-2.0 at lines 7, 8
+File: include/eigen3/Eigen/src/Core/Assign.h
 License:
 	MPL-2.0 at lines 7, 8
 File: include/eigen3/Eigen/src/Core/Map.h
@@ -618,47 +618,50 @@ License:
 	MPL-2.0 at lines 7, 8
 File: include/eigen3/unsupported/Eigen/src/IterativeSolvers/ConstrainedConjGrad.h
 License:
-	LGPL-2.1-only at lines 16, 21, 15, 22, 23, 14
-File: include/eigen3/Eigen/src/Core/StlIterators.h
+	LGPL-2.1-only at lines 22, 23, 15, 14, 16, 21
+File: include/eigen3/unsupported/Eigen/src/NonLinearOptimization/HybridNonLinearSolver.h
 License:
 	MPL-2.0 at lines 7, 8
-File: include/eigen3/unsupported/Eigen/src/NonLinearOptimization/HybridNonLinearSolver.h
+File: include/eigen3/Eigen/src/Core/StlIterators.h
 License:
 	MPL-2.0 at lines 7, 8
 File: include/eigen3/unsupported/Eigen/src/IterativeSolvers/GMRES.h
 License:
 	MPL-2.0 at lines 7, 8
-File: include/eigen3/Eigen/src/Core/DenseBase.h
-License:
-	MPL-2.0 at lines 7, 8
 File: include/eigen3/unsupported/Eigen/src/FFT/ei_kissfft_impl.h
 License:
 	MPL-2.0 at lines 7, 8
-File: include/eigen3/Eigen/src/Core/Array.h
+File: include/eigen3/Eigen/src/Core/DenseBase.h
 License:
 	MPL-2.0 at lines 7, 8
 File: include/eigen3/unsupported/Eigen/src/Skyline/SkylineInplaceLU.h
 License:
 	MPL-2.0 at lines 7, 8
-File: include/eigen3/Eigen/src/Core/AssignEvaluator.h
+File: include/eigen3/Eigen/src/Core/Array.h
 License:
 	MPL-2.0 at lines 7, 8
 File: include/eigen3/unsupported/Eigen/src/EulerAngles/EulerSystem.h
 License:
 	MPL-2.0 at lines 7, 8
-File: include/eigen3/unsupported/Eigen/src/Skyline/SkylineMatrixBase.h
+File: include/eigen3/Eigen/src/Core/AssignEvaluator.h
 License:
 	MPL-2.0 at lines 7, 8
-File: include/eigen3/Eigen/src/Core/arch/AltiVec/MatrixVectorProduct.h
+File: include/eigen3/unsupported/Eigen/src/Skyline/SkylineMatrixBase.h
 License:
 	MPL-2.0 at lines 7, 8
 File: include/eigen3/unsupported/Eigen/EulerAngles
 License:
 	MPL-2.0 at lines 7, 8
-File: include/eigen3/Eigen/src/Core/arch/AltiVec/MathFunctions.h
+File: include/eigen3/Eigen/src/Core/arch/AltiVec/MatrixVectorProduct.h
 License:
 	MPL-2.0 at lines 7, 8
 File: include/eigen3/Eigen/KLUSupport
+License:
+	MPL-2.0 at lines 7, 8
+File: include/eigen3/Eigen/src/Core/arch/AltiVec/MathFunctions.h
+License:
+	MPL-2.0 at lines 7, 8
+File: include/eigen3/Eigen/PardisoSupport
 License:
 	MPL-2.0 at lines 7, 8
 File: include/eigen3/Eigen/src/Core/arch/SYCL/PacketMath.h
@@ -667,49 +670,49 @@ License:
 File: include/eigen3/Eigen/src/Core/arch/SYCL/MathFunctions.h
 License:
 	MPL-2.0 at lines 7, 8
-File: include/eigen3/Eigen/PardisoSupport
-License:
-	MPL-2.0 at lines 7, 8
-File: include/eigen3/Eigen/src/Core/arch/MSA/MathFunctions.h
+File: include/eigen3/Eigen/SparseLU
 License:
 	MPL-2.0 at lines 7, 8
 File: include/eigen3/unsupported/Eigen/src/MatrixFunctions/MatrixSquareRoot.h
 License:
 	MPL-2.0 at lines 7, 8
-File: include/eigen3/Eigen/SparseLU
-License:
-	MPL-2.0 at lines 7, 8
-File: include/eigen3/Eigen/src/Core/arch/SSE/TypeCasting.h
-License:
-	MPL-2.0 at lines 7, 8
-File: include/eigen3/Eigen/src/Core/arch/Default/Settings.h
-License:
-	MPL-2.0 at lines 7, 8
-File: include/eigen3/unsupported/Eigen/src/MatrixFunctions/MatrixExponential.h
+File: include/eigen3/Eigen/src/Core/arch/MSA/MathFunctions.h
 License:
 	MPL-2.0 at lines 7, 8
 File: include/eigen3/Eigen/QR
 License:
 	MPL-2.0 at lines 7, 8
-File: include/eigen3/Eigen/src/Core/arch/Default/BFloat16.h
+File: include/eigen3/Eigen/src/Core/arch/SSE/TypeCasting.h
 License:
-	Apache-2.0 at lines 2, 194, 179, 192, 190, 4
+	MPL-2.0 at lines 7, 8
+File: include/eigen3/unsupported/Eigen/src/MatrixFunctions/MatrixExponential.h
+License:
+	MPL-2.0 at lines 7, 8
+File: include/eigen3/Eigen/src/Core/arch/Default/Settings.h
+License:
+	MPL-2.0 at lines 7, 8
 File: include/eigen3/Eigen/StdList
 License:
 	MPL-2.0 at lines 7, 8
 File: include/eigen3/unsupported/Eigen/src/Splines/Spline.h
 License:
 	MPL-2.0 at lines 7, 8
+File: include/eigen3/Eigen/src/Core/arch/Default/BFloat16.h
+License:
+	Apache-2.0 at lines 2, 194, 190, 192, 179, 4
 File: include/eigen3/Eigen/Geometry
 License:
 	MPL-2.0 at lines 7, 8
 File: include/eigen3/unsupported/Eigen/src/KroneckerProduct/KroneckerTensorProduct.h
 License:
 	MPL-2.0 at lines 7, 8
+File: include/eigen3/Eigen/SPQRSupport
+License:
+	MPL-2.0 at lines 7, 8
 File: include/eigen3/Eigen/src/Core/arch/NEON/PacketMath.h
 License:
 	MPL-2.0 at lines 7, 8
-File: include/eigen3/Eigen/SPQRSupport
+File: include/eigen3/Eigen/QtAlignedMalloc
 License:
 	MPL-2.0 at lines 7, 8
 File: include/eigen3/Eigen/src/Core/arch/NEON/TypeCasting.h
@@ -721,22 +724,22 @@ License:
 File: include/eigen3/Eigen/src/Core/arch/ZVector/Complex.h
 License:
 	MPL-2.0 at lines 7, 8
-File: include/eigen3/Eigen/QtAlignedMalloc
-License:
-	MPL-2.0 at lines 7, 8
-File: include/eigen3/Eigen/src/Core/arch/SVE/TypeCasting.h
-License:
-	MPL-2.0 at lines 7, 8
-File: include/eigen3/unsupported/Eigen/src/FFT/ei_fftw_impl.h
-License:
-	MPL-2.0 at lines 7, 8
 File: include/eigen3/Eigen/Householder
 License:
 	MPL-2.0 at lines 7, 8
 File: include/eigen3/Eigen/src/Eigenvalues/SelfAdjointEigenSolver_LAPACKE.h
 License:
-	BSD-3-Clause at lines 9, 7, 12, 4
+	BSD-3-Clause at lines 12, 9, 7, 4
+File: include/eigen3/unsupported/Eigen/src/FFT/ei_fftw_impl.h
+License:
+	MPL-2.0 at lines 7, 8
+File: include/eigen3/Eigen/src/Core/arch/SVE/TypeCasting.h
+License:
+	MPL-2.0 at lines 7, 8
 File: include/eigen3/Eigen/src/Core/arch/GPU/TypeCasting.h
+License:
+	MPL-2.0 at lines 7, 8
+File: include/eigen3/Eigen/src/Eigenvalues/GeneralizedSelfAdjointEigenSolver.h
 License:
 	MPL-2.0 at lines 7, 8
 File: include/eigen3/unsupported/Eigen/OpenGLSupport
@@ -745,28 +748,28 @@ License:
 File: include/eigen3/Eigen/src/Core/arch/AVX512/PacketMath.h
 License:
 	MPL-2.0 at lines 7, 8
-File: include/eigen3/Eigen/src/Eigenvalues/GeneralizedSelfAdjointEigenSolver.h
-License:
-	MPL-2.0 at lines 7, 8
-File: include/eigen3/Eigen/src/Core/arch/AVX512/MathFunctions.h
-License:
-	MPL-2.0 at lines 7, 8
 File: include/eigen3/Eigen/CholmodSupport
-License:
-	MPL-2.0 at lines 7, 8
-File: include/eigen3/Eigen/src/Core/arch/AVX/Complex.h
 License:
 	MPL-2.0 at lines 7, 8
 File: include/eigen3/Eigen/src/Eigenvalues/ComplexSchur.h
 License:
 	MPL-2.0 at lines 7, 8
+File: include/eigen3/Eigen/src/Core/arch/AVX512/MathFunctions.h
+License:
+	MPL-2.0 at lines 7, 8
 File: include/eigen3/Eigen/SparseCholesky
 License:
 	MPL-2.0 at lines 7, 8
-File: include/eigen3/Eigen/src/Core/Swap.h
+File: include/eigen3/Eigen/src/Core/arch/AVX/Complex.h
 License:
 	MPL-2.0 at lines 7, 8
 File: include/eigen3/Eigen/src/Eigenvalues/GeneralizedEigenSolver.h
+License:
+	MPL-2.0 at lines 7, 8
+File: include/eigen3/Eigen/src/Eigenvalues/RealSchur_LAPACKE.h
+License:
+	BSD-3-Clause at lines 12, 9, 7, 4
+File: include/eigen3/Eigen/src/Core/Swap.h
 License:
 	MPL-2.0 at lines 7, 8
 File: include/eigen3/Eigen/SVD
@@ -775,40 +778,34 @@ License:
 File: include/eigen3/Eigen/src/Core/ReturnByValue.h
 License:
 	MPL-2.0 at lines 7, 8
-File: include/eigen3/Eigen/src/Eigenvalues/RealSchur_LAPACKE.h
-License:
-	BSD-3-Clause at lines 9, 7, 12, 4
-File: include/eigen3/Eigen/src/Core/NumTraits.h
+File: include/eigen3/Eigen/src/SparseCholesky/SimplicialCholesky.h
 License:
 	MPL-2.0 at lines 7, 8
 File: include/eigen3/Eigen/UmfPackSupport
 License:
 	MPL-2.0 at lines 7, 8
-File: include/eigen3/Eigen/src/SparseCholesky/SimplicialCholesky.h
+File: include/eigen3/Eigen/src/PardisoSupport/PardisoSupport.h
+License:
+	BSD-3-Clause at lines 12, 9, 7, 4
+File: include/eigen3/Eigen/src/Core/NumTraits.h
 License:
 	MPL-2.0 at lines 7, 8
 File: include/eigen3/Eigen/src/Core/Reshaped.h
 License:
 	MPL-2.0 at lines 7, 8
-File: include/eigen3/Eigen/src/PardisoSupport/PardisoSupport.h
-License:
-	BSD-3-Clause at lines 9, 7, 12, 4
 File: include/eigen3/Eigen/PaStiXSupport
-License:
-	MPL-2.0 at lines 7, 8
-File: include/eigen3/Eigen/src/Core/ConditionEstimator.h
 License:
 	MPL-2.0 at lines 7, 8
 File: include/eigen3/Eigen/src/SVD/UpperBidiagonalization.h
 License:
 	MPL-2.0 at lines 7, 8
-File: include/eigen3/Eigen/src/Core/MathFunctionsImpl.h
+File: include/eigen3/Eigen/src/Core/ConditionEstimator.h
 License:
 	MPL-2.0 at lines 7, 8
 File: include/eigen3/Eigen/SuperLUSupport
 License:
 	MPL-2.0 at lines 7, 8
-File: include/eigen3/Eigen/src/Core/VectorwiseOp.h
+File: include/eigen3/Eigen/src/Core/MathFunctionsImpl.h
 License:
 	MPL-2.0 at lines 7, 8
 File: include/eigen3/Eigen/src/SparseLU/SparseLUImpl.h
@@ -817,13 +814,19 @@ License:
 File: include/eigen3/Eigen/MetisSupport
 License:
 	MPL-2.0 at lines 7, 8
+File: include/eigen3/Eigen/src/Core/VectorwiseOp.h
+License:
+	MPL-2.0 at lines 7, 8
+File: include/eigen3/Eigen/src/SparseLU/SparseLU_Utils.h
+License:
+	MPL-2.0 at lines 7, 8
 File: include/eigen3/Eigen/src/Core/BooleanRedux.h
 License:
 	MPL-2.0 at lines 7, 8
 File: include/eigen3/Eigen/SparseCore
 License:
 	MPL-2.0 at lines 7, 8
-File: include/eigen3/Eigen/src/SparseLU/SparseLU_Utils.h
+File: include/eigen3/Eigen/src/SparseLU/SparseLU_SupernodalMatrix.h
 License:
 	MPL-2.0 at lines 7, 8
 File: include/eigen3/Eigen/src/Core/util/Memory.h
@@ -835,16 +838,17 @@ License:
 File: include/eigen3/Eigen/src/Core/util/SymbolicIndex.h
 License:
 	MPL-2.0 at lines 7, 8
-File: include/eigen3/Eigen/src/SparseLU/SparseLU_SupernodalMatrix.h
+File: include/eigen3/Eigen/src/SparseLU/SparseLU_panel_dfs.h
+Licenses:
+	NotreDame-style at line 24
+	MPL-2.0 at lines 7, 8
+File: include/eigen3/Eigen/IterativeLinearSolvers
 License:
 	MPL-2.0 at lines 7, 8
 File: include/eigen3/Eigen/src/Core/util/Meta.h
 License:
 	MPL-2.0 at lines 7, 8
-File: include/eigen3/Eigen/IterativeLinearSolvers
-License:
-	MPL-2.0 at lines 7, 8
-File: include/eigen3/Eigen/src/SparseLU/SparseLU_panel_dfs.h
+File: include/eigen3/Eigen/src/SparseLU/SparseLU_pivotL.h
 Licenses:
 	NotreDame-style at line 24
 	MPL-2.0 at lines 7, 8
@@ -854,33 +858,17 @@ License:
 File: include/eigen3/Eigen/src/Eigenvalues/RealQZ.h
 License:
 	MPL-2.0 at lines 7, 8
-File: include/eigen3/Eigen/src/Core/MatrixBase.h
-License:
-	MPL-2.0 at lines 7, 8
-File: include/eigen3/Eigen/src/SparseLU/SparseLU_pivotL.h
+File: include/eigen3/Eigen/src/SparseLU/SparseLU_relax_snode.h
 Licenses:
 	NotreDame-style at line 24
 	MPL-2.0 at lines 7, 8
-File: include/eigen3/Eigen/src/Core/CwiseUnaryOp.h
+File: include/eigen3/Eigen/src/Core/MatrixBase.h
 License:
 	MPL-2.0 at lines 7, 8
 File: include/eigen3/Eigen/src/Eigenvalues/MatrixBaseEigenvalues.h
 License:
 	MPL-2.0 at lines 7, 8
-File: include/eigen3/Eigen/src/SparseLU/SparseLU_relax_snode.h
-Licenses:
-	NotreDame-style at line 24
-	MPL-2.0 at lines 7, 8
-File: include/eigen3/Eigen/src/Core/Replicate.h
-License:
-	MPL-2.0 at lines 7, 8
-File: include/eigen3/Eigen/src/QR/ColPivHouseholderQR_LAPACKE.h
-License:
-	BSD-3-Clause at lines 9, 7, 12, 4
-File: include/eigen3/Eigen/src/Eigenvalues/ComplexEigenSolver.h
-License:
-	MPL-2.0 at lines 7, 8
-File: include/eigen3/Eigen/src/QR/CompleteOrthogonalDecomposition.h
+File: include/eigen3/Eigen/src/Core/CwiseUnaryOp.h
 License:
 	MPL-2.0 at lines 7, 8
 File: include/eigen3/Eigen/src/Core/CwiseTernaryOp.h
@@ -888,8 +876,20 @@ License:
 	MPL-2.0 at lines 7, 8
 File: include/eigen3/Eigen/src/Core/products/TriangularMatrixMatrix_BLAS.h
 License:
-	BSD-3-Clause at lines 9, 7, 12, 4
-File: include/eigen3/Eigen/src/misc/Image.h
+	BSD-3-Clause at lines 12, 9, 7, 4
+File: include/eigen3/Eigen/src/Core/Replicate.h
+License:
+	MPL-2.0 at lines 7, 8
+File: include/eigen3/Eigen/src/QR/ColPivHouseholderQR_LAPACKE.h
+License:
+	BSD-3-Clause at lines 12, 9, 7, 4
+File: include/eigen3/Eigen/src/Eigenvalues/ComplexEigenSolver.h
+License:
+	MPL-2.0 at lines 7, 8
+File: include/eigen3/Eigen/src/QR/CompleteOrthogonalDecomposition.h
+License:
+	MPL-2.0 at lines 7, 8
+File: include/eigen3/Eigen/src/Core/products/SelfadjointMatrixMatrix.h
 License:
 	MPL-2.0 at lines 7, 8
 File: include/eigen3/Eigen/src/Eigenvalues/RealSchur.h
@@ -897,44 +897,35 @@ License:
 	MPL-2.0 at lines 7, 8
 File: include/eigen3/Eigen/src/Eigenvalues/ComplexSchur_LAPACKE.h
 License:
-	BSD-3-Clause at lines 9, 7, 12, 4
+	BSD-3-Clause at lines 12, 9, 7, 4
+File: include/eigen3/Eigen/src/misc/Image.h
+License:
+	MPL-2.0 at lines 7, 8
 File: include/eigen3/Eigen/src/misc/RealSvd2x2.h
-License:
-	MPL-2.0 at lines 7, 8
-File: include/eigen3/Eigen/src/Core/products/SelfadjointMatrixMatrix.h
-License:
-	MPL-2.0 at lines 7, 8
-File: include/eigen3/Eigen/src/Cholesky/LLT.h
-License:
-	MPL-2.0 at lines 7, 8
-File: include/eigen3/Eigen/src/SparseCholesky/SimplicialCholesky_impl.h
 License:
 	MPL-2.0 at lines 7, 8
 File: include/eigen3/Eigen/src/Core/products/GeneralMatrixMatrixTriangular.h
 License:
 	MPL-2.0 at lines 7, 8
+File: include/eigen3/Eigen/src/SparseCholesky/SimplicialCholesky_impl.h
+License:
+	MPL-2.0 at lines 7, 8
+File: include/eigen3/Eigen/src/Cholesky/LLT.h
+License:
+	MPL-2.0 at lines 7, 8
 File: include/eigen3/Eigen/src/SuperLUSupport/SuperLUSupport.h
-License:
-	MPL-2.0 at lines 7, 8
-File: include/eigen3/Eigen/src/Geometry/RotationBase.h
-License:
-	MPL-2.0 at lines 7, 8
-File: include/eigen3/Eigen/src/SVD/BDCSVD.h
-License:
-	MPL-2.0 at lines 7, 8
-File: include/eigen3/Eigen/src/Geometry/EulerAngles.h
 License:
 	MPL-2.0 at lines 7, 8
 File: include/eigen3/Eigen/src/Core/products/GeneralBlockPanelKernel.h
 License:
 	MPL-2.0 at lines 7, 8
-File: include/eigen3/Eigen/src/Geometry/ParametrizedLine.h
+File: include/eigen3/Eigen/src/SVD/BDCSVD.h
 License:
 	MPL-2.0 at lines 7, 8
-File: include/eigen3/Eigen/src/SVD/JacobiSVD.h
+File: include/eigen3/Eigen/src/Geometry/RotationBase.h
 License:
 	MPL-2.0 at lines 7, 8
-File: include/eigen3/Eigen/src/Geometry/Scaling.h
+File: include/eigen3/Eigen/src/Geometry/EulerAngles.h
 License:
 	MPL-2.0 at lines 7, 8
 File: include/eigen3/Eigen/src/Core/products/GeneralMatrixVector.h
@@ -942,57 +933,69 @@ License:
 	MPL-2.0 at lines 7, 8
 File: include/eigen3/Eigen/src/Core/products/GeneralMatrixMatrixTriangular_BLAS.h
 License:
-	BSD-3-Clause at lines 9, 7, 12, 4
+	BSD-3-Clause at lines 12, 9, 7, 4
 File: include/eigen3/Eigen/src/Core/products/GeneralMatrixVector_BLAS.h
 License:
-	BSD-3-Clause at lines 9, 7, 12, 4
-File: include/eigen3/Eigen/src/Geometry/Translation.h
+	BSD-3-Clause at lines 12, 9, 7, 4
+File: include/eigen3/Eigen/src/SVD/JacobiSVD.h
+License:
+	MPL-2.0 at lines 7, 8
+File: include/eigen3/Eigen/src/Geometry/ParametrizedLine.h
+License:
+	MPL-2.0 at lines 7, 8
+File: include/eigen3/Eigen/src/Geometry/Scaling.h
+License:
+	MPL-2.0 at lines 7, 8
+File: include/eigen3/Eigen/src/Core/CommaInitializer.h
 License:
 	MPL-2.0 at lines 7, 8
 File: include/eigen3/Eigen/src/SparseLU/SparseLU_column_bmod.h
 Licenses:
 	NotreDame-style at line 24
 	MPL-2.0 at lines 7, 8
-File: include/eigen3/Eigen/src/plugins/CommonCwiseBinaryOps.h
+File: include/eigen3/Eigen/src/Geometry/Translation.h
 License:
 	MPL-2.0 at lines 7, 8
-File: include/eigen3/Eigen/src/Core/CommaInitializer.h
+File: include/eigen3/Eigen/src/plugins/CommonCwiseBinaryOps.h
 License:
 	MPL-2.0 at lines 7, 8
 File: include/eigen3/Eigen/src/SparseLU/SparseLU_heap_relax_snode.h
 Licenses:
 	NotreDame-style at line 24
 	MPL-2.0 at lines 7, 8
-File: include/eigen3/Eigen/src/plugins/IndexedViewMethods.h
-License:
-	MPL-2.0 at lines 7, 8
 File: include/eigen3/Eigen/src/Core/Transpose.h
 License:
 	MPL-2.0 at lines 7, 8
-File: include/eigen3/Eigen/src/SPQRSupport/SuiteSparseQRSupport.h
+File: include/eigen3/Eigen/src/plugins/IndexedViewMethods.h
+License:
+	MPL-2.0 at lines 7, 8
+File: include/eigen3/Eigen/src/Core/StableNorm.h
 License:
 	MPL-2.0 at lines 7, 8
 File: include/eigen3/Eigen/src/SparseLU/SparseLU.h
+License:
+	MPL-2.0 at lines 7, 8
+File: include/eigen3/Eigen/src/SPQRSupport/SuiteSparseQRSupport.h
 License:
 	MPL-2.0 at lines 7, 8
 File: include/eigen3/Eigen/src/SparseCore/SparseColEtree.h
 Licenses:
 	NotreDame-style at line 24
 	MPL-2.0 at lines 7, 8
-File: include/eigen3/Eigen/src/Core/StableNorm.h
-License:
-	MPL-2.0 at lines 7, 8
-File: include/eigen3/Eigen/src/SparseCore/SparseTranspose.h
+File: include/eigen3/Eigen/src/Core/SolveTriangular.h
 License:
 	MPL-2.0 at lines 7, 8
 File: include/eigen3/Eigen/src/SparseLU/SparseLU_pruneL.h
 Licenses:
 	NotreDame-style at line 24
 	MPL-2.0 at lines 7, 8
-File: include/eigen3/Eigen/src/SparseCore/SparseDot.h
+File: include/eigen3/Eigen/src/SparseCore/SparseTranspose.h
 License:
 	MPL-2.0 at lines 7, 8
-File: include/eigen3/Eigen/src/Core/SolveTriangular.h
+File: include/eigen3/Eigen/src/Core/ArrayBase.h
+License:
+	MPL-2.0 at lines 7, 8
+File: include/eigen3/Eigen/src/SparseCore/SparseDot.h
 License:
 	MPL-2.0 at lines 7, 8
 File: include/eigen3/Eigen/src/SparseLU/SparseLU_Memory.h
@@ -1002,117 +1005,114 @@ Licenses:
 File: include/eigen3/Eigen/src/SparseCore/SparseBlock.h
 License:
 	MPL-2.0 at lines 7, 8
-File: include/eigen3/Eigen/src/Core/ArrayBase.h
-License:
-	MPL-2.0 at lines 7, 8
-File: include/eigen3/Eigen/src/SparseCore/TriangularSolver.h
+File: include/eigen3/Eigen/src/Core/PartialReduxEvaluator.h
 License:
 	MPL-2.0 at lines 7, 8
 File: include/eigen3/Eigen/src/UmfPackSupport/UmfPackSupport.h
 License:
 	MPL-2.0 at lines 7, 8
-File: include/eigen3/Eigen/src/SparseCore/SparseAssign.h
-License:
-	MPL-2.0 at lines 7, 8
-File: include/eigen3/Eigen/src/Core/PartialReduxEvaluator.h
-License:
-	MPL-2.0 at lines 7, 8
-File: include/eigen3/Eigen/src/SparseCore/AmbiVector.h
-License:
-	MPL-2.0 at lines 7, 8
-File: include/eigen3/Eigen/src/Core/Block.h
+File: include/eigen3/Eigen/src/SparseCore/TriangularSolver.h
 License:
 	MPL-2.0 at lines 7, 8
 File: include/eigen3/Eigen/src/Core/Stride.h
 License:
 	MPL-2.0 at lines 7, 8
-File: include/eigen3/Eigen/src/SparseCore/SparseProduct.h
+File: include/eigen3/Eigen/src/SparseCore/SparseAssign.h
 License:
 	MPL-2.0 at lines 7, 8
-File: include/eigen3/Eigen/src/SparseCore/SparsePermutation.h
+File: include/eigen3/Eigen/src/Core/Block.h
 License:
 	MPL-2.0 at lines 7, 8
-File: include/eigen3/Eigen/src/Core/products/GeneralMatrixMatrix.h
+File: include/eigen3/Eigen/src/SparseCore/AmbiVector.h
 License:
 	MPL-2.0 at lines 7, 8
 File: include/eigen3/Eigen/src/Core/Visitor.h
 License:
 	MPL-2.0 at lines 7, 8
-File: include/eigen3/Eigen/src/SparseCore/SparseRedux.h
+File: include/eigen3/Eigen/src/SparseCore/SparseProduct.h
 License:
 	MPL-2.0 at lines 7, 8
-File: include/eigen3/Eigen/src/Core/products/SelfadjointMatrixVector.h
+File: include/eigen3/Eigen/src/Core/products/GeneralMatrixMatrix.h
+License:
+	MPL-2.0 at lines 7, 8
+File: include/eigen3/Eigen/src/SparseCore/SparsePermutation.h
 License:
 	MPL-2.0 at lines 7, 8
 File: include/eigen3/Eigen/src/Core/functors/NullaryFunctors.h
 License:
 	MPL-2.0 at lines 7, 8
+File: include/eigen3/Eigen/src/Core/products/SelfadjointMatrixVector.h
+License:
+	MPL-2.0 at lines 7, 8
+File: include/eigen3/Eigen/src/SparseCore/SparseRedux.h
+License:
+	MPL-2.0 at lines 7, 8
 File: include/eigen3/Eigen/src/Core/products/SelfadjointMatrixVector_BLAS.h
 License:
-	BSD-3-Clause at lines 9, 7, 12, 4
-File: include/eigen3/Eigen/src/OrderingMethods/Eigen_Colamd.h
-Licenses:
-	MPL-2.0 at lines 7, 8
-	EFL at line 34
-File: include/eigen3/Eigen/src/Core/products/Parallelizer.h
+	BSD-3-Clause at lines 12, 9, 7, 4
+File: include/eigen3/Eigen/src/Core/functors/BinaryFunctors.h
 License:
 	MPL-2.0 at lines 7, 8
-File: include/eigen3/Eigen/src/Core/functors/BinaryFunctors.h
+File: include/eigen3/Eigen/src/Core/products/Parallelizer.h
 License:
 	MPL-2.0 at lines 7, 8
 File: include/eigen3/Eigen/src/Core/products/TriangularMatrixVector_BLAS.h
 License:
-	BSD-3-Clause at lines 9, 7, 12, 4
-File: include/eigen3/Eigen/src/LU/PartialPivLU.h
+	BSD-3-Clause at lines 12, 9, 7, 4
+File: include/eigen3/Eigen/src/OrderingMethods/Eigen_Colamd.h
+Licenses:
+	EFL at line 34
+	MPL-2.0 at lines 7, 8
+File: include/eigen3/Eigen/src/Core/DenseCoeffsBase.h
 License:
 	MPL-2.0 at lines 7, 8
-File: include/eigen3/Eigen/src/LU/FullPivLU.h
+File: include/eigen3/Eigen/src/LU/PartialPivLU.h
 License:
 	MPL-2.0 at lines 7, 8
 File: include/eigen3/Eigen/src/Core/products/SelfadjointProduct.h
 License:
 	MPL-2.0 at lines 7, 8
-File: include/eigen3/Eigen/src/Core/DenseCoeffsBase.h
-License:
-	MPL-2.0 at lines 7, 8
-File: include/eigen3/Eigen/src/Householder/BlockHouseholder.h
-License:
-	MPL-2.0 at lines 7, 8
 File: include/eigen3/Eigen/src/Core/DiagonalProduct.h
+License:
+	MPL-2.0 at lines 7, 8
+File: include/eigen3/Eigen/src/LU/FullPivLU.h
 License:
 	MPL-2.0 at lines 7, 8
 File: include/eigen3/Eigen/src/Core/products/SelfadjointRank2Update.h
 License:
 	MPL-2.0 at lines 7, 8
-File: include/eigen3/Eigen/src/StlSupport/details.h
-License:
-	MPL-2.0 at lines 7, 8
-File: include/eigen3/Eigen/src/IterativeLinearSolvers/LeastSquareConjugateGradient.h
-License:
-	MPL-2.0 at lines 7, 8
-File: include/eigen3/Eigen/src/Core/NestByValue.h
+File: include/eigen3/Eigen/src/Householder/BlockHouseholder.h
 License:
 	MPL-2.0 at lines 7, 8
 File: include/eigen3/Eigen/src/Core/Matrix.h
 License:
 	MPL-2.0 at lines 7, 8
-File: include/eigen3/Eigen/src/IterativeLinearSolvers/IterativeSolverBase.h
+File: include/eigen3/Eigen/src/StlSupport/details.h
 License:
 	MPL-2.0 at lines 7, 8
-File: include/eigen3/Eigen/src/Core/Product.h
+File: include/eigen3/Eigen/src/Core/NestByValue.h
+License:
+	MPL-2.0 at lines 7, 8
+File: include/eigen3/Eigen/src/IterativeLinearSolvers/LeastSquareConjugateGradient.h
 License:
 	MPL-2.0 at lines 7, 8
 File: include/eigen3/Eigen/src/Core/GeneralProduct.h
 License:
 	MPL-2.0 at lines 7, 8
-File: include/eigen3/Eigen/src/IterativeLinearSolvers/IncompleteLUT.h
-Licenses:
+File: include/eigen3/Eigen/src/Core/Product.h
+License:
 	MPL-2.0 at lines 7, 8
-	LGPL at line 90
-File: include/eigen3/Eigen/src/Core/Ref.h
+File: include/eigen3/Eigen/src/IterativeLinearSolvers/IterativeSolverBase.h
 License:
 	MPL-2.0 at lines 7, 8
 File: include/eigen3/Eigen/src/Core/CwiseUnaryView.h
+License:
+	MPL-2.0 at lines 7, 8
+File: include/eigen3/Eigen/src/IterativeLinearSolvers/IncompleteLUT.h
+Licenses:
+	LGPL at line 90
+	MPL-2.0 at lines 7, 8
+File: include/eigen3/Eigen/src/Core/Ref.h
 License:
 	MPL-2.0 at lines 7, 8
 File: include/eigen3/Eigen/src/Core/ArrayWrapper.h
@@ -1142,16 +1142,16 @@ License:
 File: include/eigen3/Eigen/src/Core/SolverBase.h
 License:
 	MPL-2.0 at lines 7, 8
-File: include/eigen3/Eigen/src/Core/functors/TernaryFunctors.h
-License:
-	MPL-2.0 at lines 7, 8
 File: include/eigen3/Eigen/src/Core/arch/SSE/PacketMath.h
 License:
 	MPL-2.0 at lines 7, 8
-File: include/eigen3/Eigen/src/Core/functors/StlFunctors.h
+File: include/eigen3/Eigen/src/Core/functors/TernaryFunctors.h
 License:
 	MPL-2.0 at lines 7, 8
 File: include/eigen3/Eigen/src/Core/arch/SSE/MathFunctions.h
+License:
+	MPL-2.0 at lines 7, 8
+File: include/eigen3/Eigen/src/Core/functors/StlFunctors.h
 License:
 	MPL-2.0 at lines 7, 8
 File: include/eigen3/Eigen/src/Core/Inverse.h
@@ -1171,7 +1171,7 @@ License:
 	MPL-2.0 at lines 7, 8
 File: include/eigen3/Eigen/src/Core/Assign_MKL.h
 License:
-	BSD-3-Clause at lines 9, 7, 12, 4
+	BSD-3-Clause at lines 12, 9, 7, 4
 File: include/eigen3/Eigen/src/Core/arch/NEON/MathFunctions.h
 License:
 	MPL-2.0 at lines 7, 8
@@ -1187,10 +1187,10 @@ License:
 File: include/eigen3/Eigen/src/Core/arch/SVE/MathFunctions.h
 License:
 	MPL-2.0 at lines 7, 8
-File: include/eigen3/Eigen/src/Core/arch/AltiVec/MatrixProduct.h
+File: include/eigen3/Eigen/src/Core/arch/GPU/MathFunctions.h
 License:
 	MPL-2.0 at lines 7, 8
-File: include/eigen3/Eigen/src/Core/arch/GPU/MathFunctions.h
+File: include/eigen3/Eigen/src/Core/arch/AltiVec/MatrixProduct.h
 License:
 	MPL-2.0 at lines 7, 8
 File: include/eigen3/Eigen/src/Core/arch/AVX512/Complex.h
@@ -1199,58 +1199,58 @@ License:
 File: include/eigen3/Eigen/src/Core/arch/SYCL/SyclMemoryModel.h
 License:
 	MPL-2.0 at lines 7, 8
-File: include/eigen3/Eigen/src/Core/arch/SYCL/TypeCasting.h
-License:
-	MPL-2.0 at lines 7, 8
 File: include/eigen3/Eigen/src/Core/arch/CUDA/Complex.h
 License:
 	MPL-2.0 at lines 7, 8
-File: include/eigen3/Eigen/src/Core/arch/MSA/Complex.h
+File: include/eigen3/Eigen/src/Core/arch/SYCL/TypeCasting.h
 License:
 	MPL-2.0 at lines 7, 8
 File: include/eigen3/Eigen/src/Core/arch/AVX/TypeCasting.h
 License:
 	MPL-2.0 at lines 7, 8
-File: include/eigen3/Eigen/src/Core/arch/SSE/Complex.h
+File: include/eigen3/Eigen/src/Core/arch/MSA/Complex.h
 License:
 	MPL-2.0 at lines 7, 8
 File: include/eigen3/Eigen/src/Core/GlobalFunctions.h
 License:
 	MPL-2.0 at lines 7, 8
-File: include/eigen3/Eigen/src/Core/arch/Default/ConjHelper.h
+File: include/eigen3/Eigen/src/Core/arch/SSE/Complex.h
 License:
 	MPL-2.0 at lines 7, 8
 File: include/eigen3/Eigen/src/Core/SelfCwiseBinaryOp.h
 License:
 	MPL-2.0 at lines 7, 8
-File: include/eigen3/Eigen/src/Core/arch/Default/TypeCasting.h
+File: include/eigen3/Eigen/src/Core/arch/Default/ConjHelper.h
 License:
 	MPL-2.0 at lines 7, 8
 File: include/eigen3/Eigen/src/Core/SelfAdjointView.h
 License:
 	MPL-2.0 at lines 7, 8
-File: include/eigen3/Eigen/src/Core/arch/Default/GenericPacketMathFunctionsFwd.h
+File: include/eigen3/Eigen/src/Core/arch/Default/TypeCasting.h
 License:
 	MPL-2.0 at lines 7, 8
 File: include/eigen3/Eigen/src/Core/IO.h
 License:
 	MPL-2.0 at lines 7, 8
-File: include/eigen3/Eigen/src/Core/arch/NEON/Complex.h
+File: include/eigen3/Eigen/src/Core/arch/Default/GenericPacketMathFunctionsFwd.h
 License:
 	MPL-2.0 at lines 7, 8
 File: include/eigen3/Eigen/src/Core/Transpositions.h
 License:
 	MPL-2.0 at lines 7, 8
-File: include/eigen3/Eigen/src/Core/arch/ZVector/PacketMath.h
+File: include/eigen3/Eigen/src/Core/arch/NEON/Complex.h
 License:
 	MPL-2.0 at lines 7, 8
 File: include/eigen3/Eigen/src/Core/TriangularMatrix.h
 License:
 	MPL-2.0 at lines 7, 8
-File: include/eigen3/Eigen/src/Core/arch/SVE/PacketMath.h
+File: include/eigen3/Eigen/src/Core/arch/ZVector/PacketMath.h
 License:
 	MPL-2.0 at lines 7, 8
 File: include/eigen3/Eigen/src/Core/Reverse.h
+License:
+	MPL-2.0 at lines 7, 8
+File: include/eigen3/Eigen/src/Core/arch/SVE/PacketMath.h
 License:
 	MPL-2.0 at lines 7, 8
 File: include/eigen3/Eigen/src/Core/util/BlasUtil.h
@@ -1259,10 +1259,10 @@ License:
 File: include/eigen3/Eigen/src/Core/arch/GPU/PacketMath.h
 License:
 	MPL-2.0 at lines 7, 8
-File: include/eigen3/Eigen/src/Core/arch/AVX512/TypeCasting.h
+File: include/eigen3/Eigen/src/Core/util/StaticAssert.h
 License:
 	MPL-2.0 at lines 7, 8
-File: include/eigen3/Eigen/src/Core/util/StaticAssert.h
+File: include/eigen3/Eigen/src/Core/arch/AVX512/TypeCasting.h
 License:
 	MPL-2.0 at lines 7, 8
 File: include/eigen3/Eigen/src/Core/util/Constants.h
@@ -1282,7 +1282,7 @@ License:
 	MPL-2.0 at lines 7, 8
 File: include/eigen3/Eigen/src/Core/util/MKL_support.h
 License:
-	BSD-3-Clause at lines 9, 7, 12, 4
+	BSD-3-Clause at lines 12, 9, 7, 4
 File: include/eigen3/Eigen/src/Core/CoreEvaluators.h
 License:
 	MPL-2.0 at lines 7, 8
@@ -1315,7 +1315,7 @@ License:
 	MPL-2.0 at lines 7, 8
 File: include/eigen3/Eigen/src/Cholesky/LLT_LAPACKE.h
 License:
-	BSD-3-Clause at lines 9, 7, 12, 4
+	BSD-3-Clause at lines 12, 9, 7, 4
 File: include/eigen3/Eigen/src/Core/Redux.h
 License:
 	MPL-2.0 at lines 7, 8
@@ -1345,7 +1345,7 @@ License:
 	MPL-2.0 at lines 7, 8
 File: include/eigen3/Eigen/src/Geometry/AlignedBox.h
 Licenses:
-	BSD-3-Clause at lines 9, 7, 12, 4
+	BSD-3-Clause at lines 12, 9, 7, 4
 	MPL-2.0 at lines 7, 8
 File: include/eigen3/Eigen/src/Core/util/Macros.h
 License:
@@ -1370,7 +1370,7 @@ License:
 	MPL-2.0 at lines 7, 8
 File: include/eigen3/Eigen/src/QR/HouseholderQR_LAPACKE.h
 License:
-	BSD-3-Clause at lines 9, 7, 12, 4
+	BSD-3-Clause at lines 12, 9, 7, 4
 File: include/eigen3/Eigen/src/plugins/BlockMethods.h
 License:
 	MPL-2.0 at lines 7, 8
@@ -1389,22 +1389,22 @@ License:
 File: include/eigen3/Eigen/src/SparseCore/ConservativeSparseSparseProduct.h
 License:
 	MPL-2.0 at lines 7, 8
+File: include/eigen3/Eigen/src/SparseCore/SparseMap.h
+License:
+	MPL-2.0 at lines 7, 8
 File: include/eigen3/Eigen/src/misc/lapacke.h
 License:
-	BSD-3-Clause at lines 9, 7, 12, 4
-File: include/eigen3/Eigen/src/SparseCore/SparseMap.h
+	BSD-3-Clause at lines 12, 9, 7, 4
+File: include/eigen3/Eigen/src/SparseCore/SparseCwiseBinaryOp.h
 License:
 	MPL-2.0 at lines 7, 8
 File: include/eigen3/Eigen/src/Cholesky/LDLT.h
 License:
 	MPL-2.0 at lines 7, 8
-File: include/eigen3/Eigen/src/SparseCore/SparseCwiseBinaryOp.h
+File: include/eigen3/Eigen/src/SparseCore/SparseSolverBase.h
 License:
 	MPL-2.0 at lines 7, 8
 File: include/eigen3/Eigen/src/Geometry/AngleAxis.h
-License:
-	MPL-2.0 at lines 7, 8
-File: include/eigen3/Eigen/src/SparseCore/SparseSolverBase.h
 License:
 	MPL-2.0 at lines 7, 8
 File: include/eigen3/Eigen/src/SparseCore/SparseFuzzy.h
@@ -1419,64 +1419,64 @@ License:
 File: include/eigen3/Eigen/src/Geometry/Transform.h
 License:
 	MPL-2.0 at lines 7, 8
-File: include/eigen3/Eigen/src/Geometry/arch/Geometry_SIMD.h
-License:
-	MPL-2.0 at lines 7, 8
 File: include/eigen3/Eigen/src/SparseCore/SparseMatrix.h
 License:
 	MPL-2.0 at lines 7, 8
-File: include/eigen3/Eigen/src/Geometry/OrthoMethods.h
+File: include/eigen3/Eigen/src/Geometry/arch/Geometry_SIMD.h
 License:
 	MPL-2.0 at lines 7, 8
 File: include/eigen3/Eigen/src/OrderingMethods/Amd.h
 License:
 	MPL-2.0 at lines 7, 8
-File: include/eigen3/Eigen/src/SparseQR/SparseQR.h
+File: include/eigen3/Eigen/src/Geometry/OrthoMethods.h
 License:
 	MPL-2.0 at lines 7, 8
 File: include/eigen3/Eigen/src/LU/InverseImpl.h
 License:
 	MPL-2.0 at lines 7, 8
-File: include/eigen3/Eigen/src/plugins/MatrixCwiseBinaryOps.h
+File: include/eigen3/Eigen/src/SparseQR/SparseQR.h
 License:
 	MPL-2.0 at lines 7, 8
 File: include/eigen3/Eigen/src/LU/arch/InverseSize4.h
 License:
 	MPL-2.0 at lines 7, 8
-File: include/eigen3/Eigen/src/SparseCore/SparseDenseProduct.h
+File: include/eigen3/Eigen/src/plugins/MatrixCwiseBinaryOps.h
 License:
 	MPL-2.0 at lines 7, 8
 File: include/eigen3/Eigen/src/Householder/HouseholderSequence.h
 License:
 	MPL-2.0 at lines 7, 8
-File: include/eigen3/Eigen/src/SparseCore/SparseView.h
+File: include/eigen3/Eigen/src/SparseCore/SparseDenseProduct.h
 License:
 	MPL-2.0 at lines 7, 8
 File: include/eigen3/Eigen/src/StlSupport/StdDeque.h
 License:
 	MPL-2.0 at lines 7, 8
-File: include/eigen3/Eigen/src/SparseCore/MappedSparseMatrix.h
+File: include/eigen3/Eigen/src/SparseCore/SparseView.h
 License:
 	MPL-2.0 at lines 7, 8
 File: include/eigen3/Eigen/src/StlSupport/StdList.h
 License:
 	MPL-2.0 at lines 7, 8
-File: include/eigen3/Eigen/src/SparseCore/SparseSparseProductWithPruning.h
+File: include/eigen3/Eigen/src/SparseCore/MappedSparseMatrix.h
 License:
 	MPL-2.0 at lines 7, 8
 File: include/eigen3/Eigen/src/IterativeLinearSolvers/ConjugateGradient.h
 License:
 	MPL-2.0 at lines 7, 8
-File: include/eigen3/Eigen/src/SparseCore/SparseDiagonalProduct.h
+File: include/eigen3/Eigen/src/SparseCore/SparseSparseProductWithPruning.h
 License:
 	MPL-2.0 at lines 7, 8
 File: include/eigen3/Eigen/src/IterativeLinearSolvers/SolveWithGuess.h
 License:
 	MPL-2.0 at lines 7, 8
-File: include/eigen3/Eigen/src/SparseCore/SparseVector.h
+File: include/eigen3/Eigen/src/SparseCore/SparseDiagonalProduct.h
 License:
 	MPL-2.0 at lines 7, 8
 File: include/eigen3/Eigen/StdVector
+License:
+	MPL-2.0 at lines 7, 8
+File: include/eigen3/Eigen/src/SparseCore/SparseVector.h
 License:
 	MPL-2.0 at lines 7, 8
 File: include/eigen3/Eigen/src/SparseCore/SparseSelfAdjointView.h
@@ -1496,7 +1496,7 @@ License:
 	MPL-2.0 at lines 7, 8
 File: include/eigen3/Eigen/src/LU/PartialPivLU_LAPACKE.h
 License:
-	BSD-3-Clause at lines 9, 7, 12, 4
+	BSD-3-Clause at lines 12, 9, 7, 4
 File: include/eigen3/Eigen/src/LU/Determinant.h
 License:
 	MPL-2.0 at lines 7, 8
@@ -1517,4 +1517,4 @@ License:
 	MPL-2.0 at lines 7, 8
 File: COPYING.APACHE
 License:
-	Apache-2.0 at lines 2, 194, 179, 192, 190, 4
+	Apache-2.0 at lines 2, 194, 190, 192, 179, 4
