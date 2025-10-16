@@ -100,13 +100,13 @@ jobs:
               if [ -n "$file_name" ]; then
                 echo " - $file_name"
                 
-                # Construct full path and delete
-                full_path="src/pgm_build_dependencies/eigen/$file_name"
-                if [ -f "$full_path" ]; then
-                  rm -f "$full_path"
-                  echo "Deleted: $full_path"
+                if [ -f "$file_name" ]; then
+                  rm -f "$file_name"
+                  echo "Deleted: $file_name"
                 else
-                  echo "File not found: $full_path"
+                  echo "File not found: $file_name"
+                  echo "Terminating worlflow because the file to be deleted does not exist."
+                  exit 1
                 fi
               fi
             done
