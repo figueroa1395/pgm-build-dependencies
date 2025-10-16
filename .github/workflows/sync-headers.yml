@@ -17,7 +17,7 @@ on:
         type: boolean
 
   schedule:
-    - cron: "30 * * * *" # Every hour at minute 30
+    - cron: "0 2 * * 0" # Runs at 02:00 UTC every Sunday
 jobs:
   sync-headers:
     name: "Sync headers from upstream repository (brew)"
