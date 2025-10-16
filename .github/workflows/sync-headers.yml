@@ -60,14 +60,13 @@ jobs:
           ls src/pgm_build_dependencies/eigen/
           ls src/pgm_build_dependencies/msgpack_cxx/
 
-      - name: License scan - eigen headers
+      - name: License scan - entire repository
         uses: fossology/fossology-action@v1
         continue-on-error: true
         with:
-          scan_mode: scan-dir
-          scanners: 'nomos ojo'
-          report_format: 'SPDX_JSON'
-          scan_dir: src/pgm_build_dependencies/eigen/
+            scan_mode: repo
+            scanners: 'nomos ojo'
+            report_format: 'SPDX_JSON'
 
       - name: Install jq
         run: sudo apt-get update && sudo apt-get install -y jq
@@ -117,8 +116,9 @@ jobs:
       - name: Check license cleanup status
         run: |
           if [ "${{ steps.license-cleanup.outcome }}" = "failure" ]; then
-            echo "WARNING: License cleanup step failed!"
-            echo "Please check the license scan results manually."
+            echo "ERROR: License cleanup step failed!"
+            echo "Terminating workflow due to license scanning issues."
+            exit 1
           else
             echo "License cleanup completed successfully"
           fi
