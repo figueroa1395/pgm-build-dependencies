@@ -85,6 +85,10 @@ jobs:
           fi
           echo "Found SPDX file: $SPDX_FILE"
           
+          echo "Removing duplicates from SPDX JSON file..."
+          jq '.files |= unique_by(.fileName)' "$SPDX_FILE" > "${SPDX_FILE}.tmp" && mv "${SPDX_FILE}.tmp" "$SPDX_FILE"
+          echo "Duplicates removed successfully"
+          
           # Get badly licensed files
           BAD_FILES=$(jq -r '
             .files[] | 
@@ -105,8 +109,6 @@ jobs:
                   echo "Deleted: $file_name"
                 else
                   echo "File not found: $file_name"
-                  echo "Terminating worlflow because the file to be deleted does not exist."
-                  exit 1
                 fi
               fi
             done
