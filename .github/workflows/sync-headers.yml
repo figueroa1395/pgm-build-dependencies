@@ -18,6 +18,7 @@ on:
 
   schedule:
     - cron: "0 2 * * 0" # Runs at 02:00 UTC every Sunday
+
 jobs:
   sync-headers:
     name: "Sync headers from upstream repository (brew)"
@@ -85,15 +86,14 @@ jobs:
           fi
           echo "Found SPDX file: $SPDX_FILE"
           
-          echo "Removing duplicates from SPDX JSON file..."
-          jq '.files |= unique_by(.fileName)' "$SPDX_FILE" > "${SPDX_FILE}.tmp" && mv "${SPDX_FILE}.tmp" "$SPDX_FILE"
-          echo "Duplicates removed successfully"
-          
           # Get badly licensed files
+          echo "Extracting and deduplicating badly licensed files..."
           BAD_FILES=$(jq -r '
-            .files[] | 
-            select(.licenseInfoInFiles[]? | type == "string" and test("GPL"; "i")) | 
-            .fileName
+            [.files[] | 
+             select(.licenseInfoInFiles[]? | type == "string" and test("GPL"; "i")) | 
+             .fileName] | 
+            unique | 
+            .[]
           ' "$SPDX_FILE")
           
           if [ -z "$BAD_FILES" ]; then
@@ -109,6 +109,7 @@ jobs:
                   echo "Deleted: $file_name"
                 else
                   echo "File not found: $file_name"
+                  exit 1
                 fi
               fi
             done
@@ -142,6 +143,11 @@ jobs:
           echo "Event name: ${{ github.event_name }}"
           echo "Force publish input: ${{ inputs.force_publish }}"
           echo "Will commit on schedule or when force_publish is true: ${{ github.event_name == 'schedule' || inputs.force_publish }}"
+
+      - name: Check git status before commit
+        run: |
+          git status
+          git diff --name-only || echo "No differences found"
 
       - name: Commit and push changes
         if: ${{ github.event_name == 'schedule' || inputs.force_publish }}
