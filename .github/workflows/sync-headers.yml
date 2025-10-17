@@ -86,11 +86,13 @@ jobs:
           fi
           echo "Found SPDX file: $SPDX_FILE"
           
-          # Get badly licensed files
+          # Get badly licensed files (excluding .git and .github directories)
           echo "Extracting and deduplicating badly licensed files..."
           BAD_FILES=$(jq -r '
             [.files[] | 
              select(.licenseInfoInFiles[]? | type == "string" and test("GPL"; "i")) | 
+             select(.fileName | test("^\\.git/") | not) |
+             select(.fileName | test("^\\.github/") | not) |
              .fileName] | 
             unique | 
             .[]
